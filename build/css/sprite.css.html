@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<title>SVG CSS sprite preview | svg-sprite</title>
+		<style>@charset "UTF-8";body{padding:0;margin:0;color:#666;background:#fafafa;font-family:Arial,Helvetica,sans-serif;font-size:1em;line-height:1.4}header{display:block;padding:3em 3em 2em 3em;background-color:#fff}header p{margin:2em 0 0 0}section{border-top:1px solid #eee;padding:2em 3em 0 3em}section ul{margin:0;padding:0}section li{display:inline;display:inline-block;background-color:#fff;position:relative;margin:0 2em 2em 0;vertical-align:top;border:1px solid #ccc;padding:1em 1em 3em 1em;cursor:default}.icon-box{margin:0;width:144px;height:144px;position:relative;background:#ccc url("data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=") top left repeat;border:1px solid #ccc;display:table-cell;vertical-align:middle;text-align:center}.icon{display:inline;display:inline-block}h1{margin-top:0}h2{margin:0;padding:0;font-size:1em;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:absolute;left:1em;right:1em;bottom:1em}footer{display:block;margin:0;padding:0 3em 3em 3em}footer p{margin:0;font-size:.7em}footer a{color:#0f7595;margin-left:0}</style>
+		<style>i{text-indent:200%;white-space:nowrap;overflow:hidden;display:inline-block;background-size:90px 72px!important}</style>
+
+<!--
+
+Sprite CSS
+====================================================================================================
+This is an all-in-one inline version of the CSS necessary to use the SVG sprite.
+
+-->
+
+<style type="text/css">
+.svg-icon500px {
+	background: url("svg/sprite.css-8e26c9f7.svg") 25% 0 no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconaboutme {
+	background: url("svg/sprite.css-8e26c9f7.svg") 75% 33.333333333333336% no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconair {
+	background: url("svg/sprite.css-8e26c9f7.svg") 0 33.333333333333336% no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconairbnb {
+	background: url("svg/sprite.css-8e26c9f7.svg") 25% 33.333333333333336% no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconamazon {
+	background: url("svg/sprite.css-8e26c9f7.svg") 50% 0 no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconamericanexpress {
+	background: url("svg/sprite.css-8e26c9f7.svg") 50% 33.333333333333336% no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconandroid {
+	background: url("svg/sprite.css-8e26c9f7.svg") 0 66.66666666666667% no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconapple {
+	background: url("svg/sprite.css-8e26c9f7.svg") 25% 66.66666666666667% no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconappnet {
+	background: url("svg/sprite.css-8e26c9f7.svg") 50% 66.66666666666667% no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconasana {
+	background: url("svg/sprite.css-8e26c9f7.svg") 75% 0 no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconautomatic {
+	background: url("svg/sprite.css-8e26c9f7.svg") 0 0 no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconbaidu {
+	background: url("svg/sprite.css-8e26c9f7.svg") 75% 66.66666666666667% no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconbandcamp {
+	background: url("svg/sprite.css-8e26c9f7.svg") 0 100% no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconbasecamp {
+	background: url("svg/sprite.css-8e26c9f7.svg") 25% 100% no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconbathasu {
+	background: url("svg/sprite.css-8e26c9f7.svg") 50% 100% no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconbebo {
+	background: url("svg/sprite.css-8e26c9f7.svg") 75% 100% no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconbehance {
+	background: url("svg/sprite.css-8e26c9f7.svg") 100% 0 no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconbigcartel {
+	background: url("svg/sprite.css-8e26c9f7.svg") 100% 33.333333333333336% no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconbing {
+	background: url("svg/sprite.css-8e26c9f7.svg") 100% 66.66666666666667% no-repeat;
+	width: 18px;
+	height: 18px;
+}
+.svg-iconbitbucket {
+	background: url("svg/sprite.css-8e26c9f7.svg") 100% 100% no-repeat;
+	width: 18px;
+	height: 18px;
+}
+</style>
+
+<!--
+====================================================================================================
+-->
+
+	</head>
+	<body>
+		<header>
+			<h1>SVG CSS sprite preview</h1>
+			<p>This preview features the generated SVG file as a conventional CSS sprite. The shapes are displayed as background images of several <code>&lt;i&gt;</code> elements.</p>
+		</header>
+		<section>
+
+<!--
+
+Conventional CSS sprite
+====================================================================================================
+This technique uses CSS classes to display portions of the sprite as background image of
+appropriately sized elements.
+
+-->
+
+			<ul>
+				<li title="icon500px">
+					<div class="icon-box">
+
+						<!-- icon500px -->
+						<i class="svg-icon500px">icon500px</i>
+
+					</div>
+					<h2>icon500px</h2>
+				</li>
+				<li title="iconaboutme">
+					<div class="icon-box">
+
+						<!-- iconaboutme -->
+						<i class="svg-iconaboutme">iconaboutme</i>
+
+					</div>
+					<h2>iconaboutme</h2>
+				</li>
+				<li title="iconair">
+					<div class="icon-box">
+
+						<!-- iconair -->
+						<i class="svg-iconair">iconair</i>
+
+					</div>
+					<h2>iconair</h2>
+				</li>
+				<li title="iconairbnb">
+					<div class="icon-box">
+
+						<!-- iconairbnb -->
+						<i class="svg-iconairbnb">iconairbnb</i>
+
+					</div>
+					<h2>iconairbnb</h2>
+				</li>
+				<li title="iconamazon">
+					<div class="icon-box">
+
+						<!-- iconamazon -->
+						<i class="svg-iconamazon">iconamazon</i>
+
+					</div>
+					<h2>iconamazon</h2>
+				</li>
+				<li title="iconamericanexpress">
+					<div class="icon-box">
+
+						<!-- iconamericanexpress -->
+						<i class="svg-iconamericanexpress">iconamericanexpress</i>
+
+					</div>
+					<h2>iconamericanexpress</h2>
+				</li>
+				<li title="iconandroid">
+					<div class="icon-box">
+
+						<!-- iconandroid -->
+						<i class="svg-iconandroid">iconandroid</i>
+
+					</div>
+					<h2>iconandroid</h2>
+				</li>
+				<li title="iconapple">
+					<div class="icon-box">
+
+						<!-- iconapple -->
+						<i class="svg-iconapple">iconapple</i>
+
+					</div>
+					<h2>iconapple</h2>
+				</li>
+				<li title="iconappnet">
+					<div class="icon-box">
+
+						<!-- iconappnet -->
+						<i class="svg-iconappnet">iconappnet</i>
+
+					</div>
+					<h2>iconappnet</h2>
+				</li>
+				<li title="iconasana">
+					<div class="icon-box">
+
+						<!-- iconasana -->
+						<i class="svg-iconasana">iconasana</i>
+
+					</div>
+					<h2>iconasana</h2>
+				</li>
+				<li title="iconautomatic">
+					<div class="icon-box">
+
+						<!-- iconautomatic -->
+						<i class="svg-iconautomatic">iconautomatic</i>
+
+					</div>
+					<h2>iconautomatic</h2>
+				</li>
+				<li title="iconbaidu">
+					<div class="icon-box">
+
+						<!-- iconbaidu -->
+						<i class="svg-iconbaidu">iconbaidu</i>
+
+					</div>
+					<h2>iconbaidu</h2>
+				</li>
+				<li title="iconbandcamp">
+					<div class="icon-box">
+
+						<!-- iconbandcamp -->
+						<i class="svg-iconbandcamp">iconbandcamp</i>
+
+					</div>
+					<h2>iconbandcamp</h2>
+				</li>
+				<li title="iconbasecamp">
+					<div class="icon-box">
+
+						<!-- iconbasecamp -->
+						<i class="svg-iconbasecamp">iconbasecamp</i>
+
+					</div>
+					<h2>iconbasecamp</h2>
+				</li>
+				<li title="iconbathasu">
+					<div class="icon-box">
+
+						<!-- iconbathasu -->
+						<i class="svg-iconbathasu">iconbathasu</i>
+
+					</div>
+					<h2>iconbathasu</h2>
+				</li>
+				<li title="iconbebo">
+					<div class="icon-box">
+
+						<!-- iconbebo -->
+						<i class="svg-iconbebo">iconbebo</i>
+
+					</div>
+					<h2>iconbebo</h2>
+				</li>
+				<li title="iconbehance">
+					<div class="icon-box">
+
+						<!-- iconbehance -->
+						<i class="svg-iconbehance">iconbehance</i>
+
+					</div>
+					<h2>iconbehance</h2>
+				</li>
+				<li title="iconbigcartel">
+					<div class="icon-box">
+
+						<!-- iconbigcartel -->
+						<i class="svg-iconbigcartel">iconbigcartel</i>
+
+					</div>
+					<h2>iconbigcartel</h2>
+				</li>
+				<li title="iconbing">
+					<div class="icon-box">
+
+						<!-- iconbing -->
+						<i class="svg-iconbing">iconbing</i>
+
+					</div>
+					<h2>iconbing</h2>
+				</li>
+				<li title="iconbitbucket">
+					<div class="icon-box">
+
+						<!-- iconbitbucket -->
+						<i class="svg-iconbitbucket">iconbitbucket</i>
+
+					</div>
+					<h2>iconbitbucket</h2>
+				</li>
+			</ul>
+
+<!--
+====================================================================================================
+-->
+
+		</section>
+		<footer>
+			<p>Generated at Tue, 03 Jan 2017 06:43:53 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+		</footer>
+	</body>
+</html>
